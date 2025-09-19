@@ -3,7 +3,7 @@ __pycache__/
 *.py[codz]
 *$py.class
 
-#TODO: remove what is not needed.
+#TODO: remove what is not needed
 # Distribution / packaging
 .Python
 build/

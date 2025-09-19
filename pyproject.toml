@@ -1,0 +1,31 @@
+# Python version
+target-version = "py311"
+
+# Line length (default is 88, same as Black)
+line-length = 88
+
+# Directories to check
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+# Enable rule categories
+select = [
+    "E",   # pycodestyle errors
+    "W",   # pycodestyle warnings  
+    "F",   # pyflakes
+    "I",   # isort (import sorting)
+    "B",   # flake8-bugbear
+    "UP",  # pyupgrade
+]
+
+# Ignore specific rules
+ignore = [
+    "E501",  # line too long (handled by formatter)
+]
+
+[tool.ruff.lint.isort]
+known-first-party = ["src"]
+
+[tool.ruff.format]
+# Use single quotes
+quote-style = "double"
