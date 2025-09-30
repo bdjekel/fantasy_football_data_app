@@ -36,7 +36,7 @@
 - **Key:** season_id: int
 - **Value schema:** 
     - season_id: int
-    - team_count: int
+    - league_size: int
     - regular_week_count: int
     - playoff_week_count: int
     - final_standings: array<object>
@@ -50,14 +50,15 @@
         - draft_pick: int
         - player_id: int
     - commissioner: manager_id
-    - league_settings: array<object>
-        - TBD
-    - scoring_settings: array<object>
-        - TBD
-    - draft_settings: array<object>
-        - TBD
-    - roster_settings: array<object>
-        - TBD
+ // Add Later
+ //   - league_settings: array<object>
+ //       - TBD
+ //   - scoring_settings: array<object>
+ //       - TBD
+ //   - draft_settings: array<object>
+ //       - TBD
+ //   - roster_settings: array<object>
+ //       - TBD
 - **Producers:** TBD
 - **Consumers:** TBD
 - **Retention:** TBD

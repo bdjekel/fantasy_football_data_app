@@ -3,8 +3,23 @@ requires-python = ">=3.11"
 
 src = ["src", "tests"]
 
+[tool.mypy]
+exclude = [
+    "migrations/",
+    "espn-api-responses/",
+    "scripts/",
+]
+
 [tool.ruff]
 line-length = 88
+
+exclude = [
+    "migrations/",
+    "espn-api-responses/",
+    "data/",
+    "scripts/",
+]
+
 
 [tool.ruff.lint]
 # Enable rule categories
