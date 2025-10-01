@@ -11,7 +11,7 @@ load_dotenv()
 
 url = "https://lm-api-reads.fantasy.espn.com/apis/v3/games/ffl/seasons/2025/segments/0/leagues/110304"
 
-params = {"view": ["mInvited", "mSettings", "mTeam", "modular", "mNav"]}
+params = {"view": "mTeam"}
 
 cookies = {
     "SWID": os.getenv("BDJ_ESPN_SWID"),

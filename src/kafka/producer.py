@@ -52,42 +52,16 @@ class ESPNProducer:
         # Fetch basic league information
         params = {"view": ["mSettings", "mStandings"]}
         data = self._make_request(params)
-        self.producer.send("espn.leagues", value=data)
-        print("✅ Sent league info to espn.leagues")
+        self.producer.send("fantasy.leagues", value=data)
+        print("✅ Sent league info to fantasy.leagues")
         return data
 
     def fetch_teams_and_rosters(self) -> dict[str, any]:
         # Fetch team and roster data
         params = {"view": ["mTeam", "mRoster"]}
         data = self._make_request(params)
-        self.producer.send("espn.rosters", value=data)
-        print("✅ Sent rosters to espn.rosters")
-        return data
-
-    def fetch_matchups(self, week: int = None):
-        # Fetch matchup data
-        params = {"view": ["mMatchup", "mMatchupScore"]}
-        if week:
-            params["scoringPeriodId"] = week
-        data = self._make_request(params)
-        self.producer.send("espn.matchups", value=data)
-        print("✅ Sent matchups to espn.matchups")
-        return data
-
-    def fetch_draft(self) -> dict[str, any]:
-        # Fetch draft results
-        params = {"view": ["mDraftDetail"]}
-        data = self._make_request(params)
-        self.producer.send("espn.drafts", value=data)
-        print("✅ Sent draft to espn.drafts")
-        return data
-
-    def fetch_transactions(self) -> dict[str, any]:
-        # Fetch trades and waiver moves
-        params = {"view": ["mTransactions2"]}
-        data = self._make_request(params)
-        self.producer.send("espn.transactions", value=data)
-        print("✅ Sent transactions to espn.transactions")
+        self.producer.send("fantasy.rosters", value=data)
+        print("✅ Sent rosters to fantasy.rosters")
         return data
 
     def fetch_all(self) -> None:
@@ -95,9 +69,6 @@ class ESPNProducer:
         print(f"Fetching all data for league {self.league_id}, year {self.year}")
         self.fetch_league_info()
         self.fetch_teams_and_rosters()
-        self.fetch_matchups()
-        self.fetch_draft()
-        self.fetch_transactions()
         self.producer.flush()
         print("✅ All data sent to Kafka")
 
