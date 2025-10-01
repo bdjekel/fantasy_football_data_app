@@ -1,4 +1,6 @@
 # type: ignore
+# TODO: Fix type hints to make ruff / mypy happy
+
 import json
 import os
 
