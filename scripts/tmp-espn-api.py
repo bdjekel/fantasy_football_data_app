@@ -24,10 +24,7 @@ file_name = f"espn-api-responses/espn_response_{response_id}.json"
 
 data = response.json()
 
-# Remove multiple keys
-unwanted_keys = ["invited", "navigationFilter", "status"]
-for key in unwanted_keys:
-    data.pop(key, None)
+
 
 # Save to file
 with open(file_name, "w") as f:
