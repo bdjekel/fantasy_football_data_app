@@ -1,0 +1,52 @@
+{
+  "draftDetail": {
+    "drafted": true,
+    "inProgress": false
+  },
+  "gameId": 1,
+  "id": 110304,
+  "scoringPeriodId": 5,
+  "seasonId": 2025,
+  "segmentId": 0,
+  "status": {
+    "activatedDate": 1755208263509,
+    "createdAsLeagueType": 0,
+    "currentLeagueType": 0,
+    "currentMatchupPeriod": 5,
+    "finalScoringPeriod": 17,
+    "firstScoringPeriod": 1,
+    "isActive": true,
+    "isExpired": false,
+    "isFull": true,
+    "isPlayoffMatchupEdited": false,
+    "isToBeDeleted": false,
+    "isViewable": false,
+    "isWaiverOrderEdited": false,
+    "latestScoringPeriod": 5,
+    "previousSeasons": [
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024
+    ],
+    "standingsUpdateDate": 1759391550201,
+    "teamsJoined": 12,
+    "transactionScoringPeriod": 5,
+    "waiverLastExecutionDate": 1759391549121,
+    "waiverProcessStatus": {
+      "2025-09-04T07:00:57.338+00:00": 1,
+      "2025-09-10T07:22:39.927+00:00": 6,
+      "2025-09-17T08:08:38.471+00:00": 5,
+      "2025-09-19T07:27:39.291+00:00": 1,
+      "2025-09-24T07:52:42.141+00:00": 3,
+      "2025-09-26T07:51:56.100+00:00": 1,
+      "2025-10-01T07:01:09.399+00:00": 11,
+      "2025-10-02T07:52:29.121+00:00": 1
+    }
+  }
+}

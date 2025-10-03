@@ -48,7 +48,7 @@ class ESPNProducer:
 
         return response.json()
 
-    def fetch_league_info(self) -> dict[str, any]:
+    def fetch_league_members(self) -> dict[str, any]:
         # Fetch basic league information
         params = {"view": ["mSettings", "mStandings"]}
         data = self._make_request(params)
@@ -56,21 +56,13 @@ class ESPNProducer:
         print("✅ Sent league info to fantasy.leagues")
         return data
 
-    def fetch_teams_and_rosters(self) -> dict[str, any]:
-        # Fetch team and roster data
-        params = {"view": ["mTeam", "mRoster"]}
+    def fetch_league_settings(self) -> dict[str, any]:
+        # Fetch league settings
+        params = {"view": ["mSettings"]}
         data = self._make_request(params)
-        self.producer.send("fantasy.rosters", value=data)
-        print("✅ Sent rosters to fantasy.rosters")
+        self.producer.send("fantasy.settings", value=data)
+        print("✅ Sent league settings to fantasy.settings")
         return data
-
-    def fetch_all(self) -> None:
-        # Fetch all data from all endpoints
-        print(f"Fetching all data for league {self.league_id}, year {self.year}")
-        self.fetch_league_info()
-        self.fetch_teams_and_rosters()
-        self.producer.flush()
-        print("✅ All data sent to Kafka")
 
     def close(self):
         # Close producer connection
