@@ -11,7 +11,7 @@ load_dotenv()
 
 url = "https://lm-api-reads.fantasy.espn.com/apis/v3/games/ffl/seasons/2025/segments/0/leagues/110304"
 
-params = {"view": "mStandings"}
+params = {"view": "kona_player_info"}
 
 cookies = {
     "SWID": os.getenv("BDJ_ESPN_SWID"),
@@ -20,7 +20,7 @@ cookies = {
 
 response = requests.get(url, params=params, cookies=cookies)
 response_id = params["view"]
-file_name = f"espn-api-responses/espn_resp_{response_id}.json"
+file_name = f"docs/espn-api-responses/espn_resp_view_{response_id}.json"
 
 data = response.json()
 

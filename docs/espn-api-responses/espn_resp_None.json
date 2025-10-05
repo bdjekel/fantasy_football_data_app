@@ -1,0 +1,163 @@
+{
+  "gameId": 1,
+  "id": 110304,
+  "members": [
+    {
+      "displayName": "marcus5670676",
+      "id": "{165F7F4E-901E-4030-973C-4B1A2AE291AB}",
+      "isLeagueManager": false
+    },
+    {
+      "displayName": "utths1",
+      "id": "{36DECC88-445F-4AEC-83C3-34CF03A5A747}",
+      "isLeagueManager": false
+    },
+    {
+      "displayName": "brianjekel",
+      "id": "{59410FBF-10B5-482A-810F-BF10B5D82A88}",
+      "isLeagueManager": false
+    },
+    {
+      "displayName": "TargetRacingFan77",
+      "id": "{6C946188-CA40-4ECA-BD94-3A33ACA53BDA}",
+      "isLeagueManager": false
+    },
+    {
+      "displayName": "ebertkyle09",
+      "id": "{8A6204BD-FD07-4911-B456-9EF3D28BFAE9}",
+      "isLeagueManager": true
+    },
+    {
+      "displayName": "WichitaHawg",
+      "id": "{9403A0A1-6B81-48AC-B943-4A2089E1877D}",
+      "isLeagueManager": false
+    },
+    {
+      "displayName": "espn20411506",
+      "id": "{A08D7709-574B-4A75-9275-5153AADCA4BA}",
+      "isLeagueManager": false
+    },
+    {
+      "displayName": "Dancolosi",
+      "id": "{BFD51741-FC0A-49AA-9517-41FC0A59AA59}",
+      "isLeagueManager": false
+    },
+    {
+      "displayName": "theaboltay",
+      "id": "{D3D8FA80-79ED-4C7E-981C-36016CB04B32}",
+      "isLeagueManager": false
+    },
+    {
+      "displayName": "Burkman65",
+      "id": "{D7033390-F32D-4A3D-9AEC-C6CD8FF209C7}",
+      "isLeagueManager": false
+    },
+    {
+      "displayName": "DylanWilson12",
+      "id": "{E1769586-95F5-4B27-B695-8695F59B27E9}",
+      "isLeagueManager": false
+    },
+    {
+      "displayName": "brendanm3115",
+      "id": "{F545EFC3-515B-4BCD-85EF-C3515B1BCD62}",
+      "isLeagueManager": false
+    }
+  ],
+  "scoringPeriodId": 5,
+  "seasonId": 2025,
+  "segmentId": 0,
+  "settings": {
+    "name": "NNFFL"
+  },
+  "status": {
+    "currentMatchupPeriod": 5,
+    "isActive": true,
+    "latestScoringPeriod": 5
+  },
+  "teams": [
+    {
+      "abbrev": "BDJ",
+      "id": 1,
+      "owners": [
+        "{59410FBF-10B5-482A-810F-BF10B5D82A88}"
+      ]
+    },
+    {
+      "abbrev": "MORG",
+      "id": 2,
+      "owners": [
+        "{6C946188-CA40-4ECA-BD94-3A33ACA53BDA}"
+      ]
+    },
+    {
+      "abbrev": "ND",
+      "id": 4,
+      "owners": [
+        "{BFD51741-FC0A-49AA-9517-41FC0A59AA59}"
+      ]
+    },
+    {
+      "abbrev": "HAWG",
+      "id": 5,
+      "owners": [
+        "{A08D7709-574B-4A75-9275-5153AADCA4BA}"
+      ]
+    },
+    {
+      "abbrev": "EXP",
+      "id": 6,
+      "owners": [
+        "{F545EFC3-515B-4BCD-85EF-C3515B1BCD62}"
+      ]
+    },
+    {
+      "abbrev": "FLW",
+      "id": 7,
+      "owners": [
+        "{E1769586-95F5-4B27-B695-8695F59B27E9}"
+      ]
+    },
+    {
+      "abbrev": "BOLT",
+      "id": 8,
+      "owners": [
+        "{D3D8FA80-79ED-4C7E-981C-36016CB04B32}"
+      ]
+    },
+    {
+      "abbrev": "DUNE",
+      "id": 9,
+      "owners": [
+        "{8A6204BD-FD07-4911-B456-9EF3D28BFAE9}"
+      ]
+    },
+    {
+      "abbrev": "MONT",
+      "id": 11,
+      "owners": [
+        "{165F7F4E-901E-4030-973C-4B1A2AE291AB}"
+      ]
+    },
+    {
+      "abbrev": "FITC",
+      "id": 12,
+      "owners": [
+        "{36DECC88-445F-4AEC-83C3-34CF03A5A747}"
+      ]
+    },
+    {
+      "abbrev": "MILL",
+      "id": 13,
+      "owners": [
+        "{9403A0A1-6B81-48AC-B943-4A2089E1877D}"
+      ]
+    },
+    {
+      "abbrev": "BURK",
+      "id": 14,
+      "owners": [
+        "{D7033390-F32D-4A3D-9AEC-C6CD8FF209C7}"
+      ]
+    }
+  ]
+}

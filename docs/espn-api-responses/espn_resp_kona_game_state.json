@@ -1,0 +1,462 @@
+{
+  "currentScoringPeriod": {
+    "id": 5
+  },
+  "settings": {
+    "allowLeagueCreation": true,
+    "clientFlags": {
+      "ESPN_PLUS_ENABLED": "false",
+      "IBM_TRADE_ASSISTANT": "false",
+      "IBM_TRADE_ASSISTANT_FORK": "false",
+      "WATSON_PLAYERCARD_ENABLED": "true",
+      "VETERANS_CONFIG": "{\"leagueIds\":[1528923904,1375213666,367281307,1846067672,430824172,1757414713,813444011,344588057,206475841,332592967,323428215,1566668370,2033946290,1317201064,1055360696,2076723335,473237526,88496218,1445133238,708702452,1938430118,1071745305,1978770070,1802775743,1764968002,1319161896],\"matchupPeriods\":[15,16],\"scoringPeriods\":[15,16,17]}",
+      "MILLER_LITE_DRAFT_PROMOS_ENABLED": "true",
+      "MILLER_LITE_PROMO_TITLE": "Game on! It's Miller Time!",
+      "MILLER_LITE_PROMO_SUBTITLE": "Enter now and you could win $10,000!",
+      "MILLER_LITE_PROMO_IMAGE": "https://g.espncdn.com/lm-static/images/miller/miller_lite_email_bannner_2025.png",
+      "MILLER_LITE_PROMO_URL": "http://www.millerlite.com/fantasyfootball",
+      "FLAGSHIP_WATCH_BUTTONS_ENABLED": "true",
+      "SHOW_BETTING_ODDS_STRIP": "true",
+      "TAUNT_SEND_ENABLED": "true",
+      "TAUNT_VIEW_ENABLED": "true",
+      "LEAGUE_RECAP_ENABLED": "true",
+      "LM_STATIC_VERSION": "29",
+      "IBM_TRADE_ANALYZER_ENABLED": "true",
+      "GRIDIRON_GAUNTLET_ENABLED": "false",
+      "LOGO_UPLOADS_ENABLED": "true",
+      "GRIDIRON_PROMO_STRIP_ENABLED": "false",
+      "IBM_TRADE_ANALYZER": "2f7533d2f74dce53bd2797febca97a3e",
+      "SHOW_BETTING_ON_ROSTER": "true",
+      "SHOW_BETTING_EXCLUSIVES": "true",
+      "PLAYER_LIVE_PROJECTIONS_ENABLED": "true",
+      "CHUI_STATIC_VERSION": "2"
+    },
+    "draftScheduleSettings": {
+      "availableTimes": [
+        [
+          0,
+          0
+        ],
+        [
+          23,
+          30
+        ],
+        [
+          4,
+          30
+        ],
+        [
+          19,
+          0
+        ],
+        [
+          20,
+          45
+        ],
+        [
+          7,
+          15
+        ],
+        [
+          17,
+          15
+        ],
+        [
+          14,
+          30
+        ],
+        [
+          16,
+          15
+        ],
+        [
+          12,
+          45
+        ],
+        [
+          13,
+          30
+        ],
+        [
+          15,
+          15
+        ],
+        [
+          22,
+          30
+        ],
+        [
+          15,
+          30
+        ],
+        [
+          18,
+          0
+        ],
+        [
+          19,
+          45
+        ],
+        [
+          22,
+          45
+        ],
+        [
+          20,
+          0
+        ],
+        [
+          21,
+          45
+        ],
+        [
+          21,
+          15
+        ],
+        [
+          2,
+          15
+        ],
+        [
+          16,
+          45
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          18,
+          30
+        ],
+        [
+          6,
+          45
+        ],
+        [
+          19,
+          30
+        ],
+        [
+          7,
+          45
+        ],
+        [
+          15,
+          45
+        ],
+        [
+          15,
+          0
+        ],
+        [
+          12,
+          15
+        ],
+        [
+          14,
+          0
+        ],
+        [
+          17,
+          45
+        ],
+        [
+          17,
+          30
+        ],
+        [
+          22,
+          15
+        ],
+        [
+          22,
+          0
+        ],
+        [
+          20,
+          30
+        ],
+        [
+          20,
+          15
+        ],
+        [
+          23,
+          0
+        ],
+        [
+          23,
+          15
+        ],
+        [
+          16,
+          30
+        ],
+        [
+          4,
+          45
+        ],
+        [
+          18,
+          45
+        ],
+        [
+          2,
+          30
+        ],
+        [
+          23,
+          45
+        ],
+        [
+          21,
+          0
+        ],
+        [
+          21,
+          30
+        ],
+        [
+          19,
+          15
+        ],
+        [
+          7,
+          30
+        ],
+        [
+          7,
+          0
+        ],
+        [
+          14,
+          45
+        ],
+        [
+          16,
+          0
+        ],
+        [
+          18,
+          15
+        ],
+        [
+          8,
+          45
+        ],
+        [
+          17,
+          0
+        ],
+        [
+          13,
+          15
+        ],
+        [
+          12,
+          0
+        ],
+        [
+          12,
+          30
+        ],
+        [
+          14,
+          15
+        ],
+        [
+          13,
+          45
+        ],
+        [
+          13,
+          0
+        ],
+        [
+          8,
+          15
+        ],
+        [
+          1,
+          15
+        ],
+        [
+          3,
+          30
+        ],
+        [
+          3,
+          45
+        ],
+        [
+          8,
+          0
+        ],
+        [
+          5,
+          30
+        ],
+        [
+          8,
+          30
+        ],
+        [
+          5,
+          45
+        ],
+        [
+          6,
+          0
+        ],
+        [
+          6,
+          15
+        ],
+        [
+          6,
+          30
+        ],
+        [
+          1,
+          45
+        ],
+        [
+          5,
+          15
+        ],
+        [
+          2,
+          45
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          4,
+          15
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          3,
+          15
+        ],
+        [
+          1,
+          30
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          0,
+          45
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          15
+        ],
+        [
+          0,
+          30
+        ]
+      ],
+      "customMockEnabled": true,
+      "draftAutoJoinSettings": {
+        "allowableLeagueSizes": [
+          10
+        ],
+        "availableDaysInAdvance": 1,
+        "availableLocalTimes": [
+          [
+            12,
+            0
+          ],
+          [
+            13,
+            0
+          ],
+          [
+            14,
+            0
+          ],
+          [
+            15,
+            0
+          ],
+          [
+            16,
+            0
+          ],
+          [
+            17,
+            0
+          ],
+          [
+            18,
+            0
+          ],
+          [
+            19,
+            0
+          ],
+          [
+            20,
+            0
+          ],
+          [
+            21,
+            0
+          ],
+          [
+            22,
+            0
+          ]
+        ],
+        "displayRecommendedTimesByDefault": false,
+        "recommendedLocalTimes": [
+          [
+            12,
+            0
+          ],
+          [
+            17,
+            0
+          ],
+          [
+            20,
+            0
+          ]
+        ]
+      },
+      "endDate": 1764662400000,
+      "liveLobbyGated": false,
+      "liveLobbyGatedDate": 1767762000000,
+      "mockLobbyGated": false,
+      "restrictedLobbyGated": true,
+      "restrictedLobbyGatedDate": 1757019600000,
+      "startDate": 1742972400000
+    },
+    "firstMatchupOverrides": {},
+    "gameNotificationSettings": {
+      "boxscoreRecapNotificationsEnabled": false
+    },
+    "gated": false,
+    "proScheduleAvailable": true,
+    "statSettings": {
+      "showSeasonProjections": false
+    },
+    "teamAutoPilotSettings": {
+      "enabled": true
+    }
+  }
+}
