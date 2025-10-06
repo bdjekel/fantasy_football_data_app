@@ -1,0 +1,19 @@
+DROP TABLE managers;
+
+DROP TABLE leagues;
+
+DROP TABLE seasons;
+
+DROP TABLE manager_seasons;
+
+DROP TABLE manager_season_ownership;
+
+DROP TABLE weekly_manager_stats;
+
+DROP TABLE manager_season_records;
+
+DROP TABLE head_to_head_records;
+
+DROP TABLE players;
+
+DROP TABLE draft_picks;

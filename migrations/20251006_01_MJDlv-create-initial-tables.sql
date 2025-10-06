@@ -1,3 +1,6 @@
+-- 
+-- depends: 
+
 --Create initial tables 
 -- depends: 
 
@@ -7,16 +10,14 @@ CREATE TABLE managers (
     espn_member_id VARCHAR(50) UNIQUE NOT NULL,  -- ESPN's SWID
     display_name VARCHAR(100),
     first_name VARCHAR(100),
-    last_name VARCHAR(100),
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    last_name VARCHAR(100)
 );
 
 -- Leagues
 CREATE TABLE leagues (
     league_id SERIAL PRIMARY KEY,
     espn_league_id INTEGER UNIQUE NOT NULL,
-    name VARCHAR(255),
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    name VARCHAR(255)
 );
 
 -- Seasons (a league in a specific year)
@@ -32,12 +33,11 @@ CREATE TABLE seasons (
 -- Manager participation in a season
 CREATE TABLE manager_seasons (
     manager_season_id SERIAL PRIMARY KEY,
-    manager_id INTEGER REFERENCES managers(manager_id),
-    season_id INTEGER REFERENCES seasons(season_id),
+    manager_id INTEGER REFERENCES managers(manager_id) NOT NULL,
+    season_id INTEGER REFERENCES seasons(season_id) NOT NULL,
     espn_team_id INTEGER NOT NULL,  -- ESPN's team ID for API mapping
     team_name VARCHAR(255),
     team_abbrev VARCHAR(10),
-    logo_url TEXT,
     final_rank INTEGER,
     playoff_seed INTEGER,
     total_points DECIMAL(10,2),
@@ -115,45 +115,4 @@ CREATE TABLE draft_picks (
     pick_number INTEGER,  -- Pick within the round
     overall_pick INTEGER,  -- Overall pick number in draft
     UNIQUE(season_id, overall_pick)
-);
-
--- Weekly rosters (who each manager started each week)
-CREATE TABLE weekly_rosters (
-    roster_id SERIAL PRIMARY KEY,
-    manager_season_id INTEGER REFERENCES manager_seasons(manager_season_id),
-    player_id INTEGER REFERENCES players(player_id),
-    week INTEGER,
-    lineup_slot VARCHAR(20),  -- 'QB', 'RB', 'WR', 'TE', 'FLEX', 'BENCH', 'IR'
-    was_started BOOLEAN,  -- TRUE if in starting lineup, FALSE if benched
-    UNIQUE(manager_season_id, player_id, week)
-);
-
--- Player weekly fantasy stats (for ROI calculations)
-CREATE TABLE player_weekly_stats (
-    stat_id SERIAL PRIMARY KEY,
-    player_id INTEGER REFERENCES players(player_id),
-    season_id INTEGER REFERENCES seasons(season_id),
-    week INTEGER,
-    fantasy_points DECIMAL(10,2),
-    actual_stats JSONB,  -- Raw stats from ESPN if needed
-    UNIQUE(player_id, season_id, week)
-);
-
--- Transactions (trades, waivers, free agent pickups)
-CREATE TABLE transactions (
-    transaction_id SERIAL PRIMARY KEY,
-    season_id INTEGER REFERENCES seasons(season_id),
-    transaction_type VARCHAR(20),  -- 'TRADE', 'WAIVER', 'FREE_AGENT', 'DROP'
-    transaction_date TIMESTAMP,
-    week INTEGER,
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-);
-
--- Transaction participants (who was involved in a transaction)
-CREATE TABLE transaction_participants (
-    participant_id SERIAL PRIMARY KEY,
-    transaction_id INTEGER REFERENCES transactions(transaction_id),
-    manager_season_id INTEGER REFERENCES manager_seasons(manager_season_id),
-    player_id INTEGER REFERENCES players(player_id),
-    action VARCHAR(20)  -- 'ACQUIRED', 'DROPPED', 'TRADED_AWAY', 'TRADED_FOR'
 );
